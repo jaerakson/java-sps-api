@@ -1,15 +1,18 @@
 package org.example.spsapi.data.dto;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
-@Getter
-@Setter
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @ToString
+@Builder
+
 public class UserDto {
-    private Integer user_key ;
-    private String nick_nm ;
+    private String user_key;
+    private String nick_nm;
+
+    }
 //    private Integer nick_nm_cnt;
 //    private Integer sns_type;
 //    private String sns_id;
@@ -32,6 +35,5 @@ public class UserDto {
 //    private String colour;
 //    private String start_dt;
 //    private String end_dt;
-    private String create_dt;
+//    private String create_dt;
 
-}

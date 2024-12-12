@@ -16,14 +16,14 @@ import java.util.Date;
 public class T_userEntity {
     @Id
     @Column(name="user_key")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long user_Key;
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private  String user_Key;
 
     @Column(name = "nick_nm" , nullable = false , unique = true,columnDefinition = "varchar(50) NOT NULL COMMENT '닉네임'")
     private String nick_nm;
 
-    @CreationTimestamp
-    @Column(name = "create_dt" , nullable = true)
-    private Date create_dt;
+//    @CreationTimestamp
+//    @Column(name = "create_dt" , nullable = true)
+//    private Date create_dt;
 
 }

@@ -14,13 +14,16 @@ import org.springframework.stereotype.Service;
 @Repository
 @Component
 public class UserDataHandlerimpl implements UserDataHandler {
-   UserDao userDao;
+   UserDao userDao; // 데이터 저장을 위해
+
    @Autowired
-    public   UserDataHandlerimpl(UserDao userDao) {
+   public   UserDataHandlerimpl(UserDao userDao) {
        this.userDao = userDao;
    }
     @Autowired
-   public T_userEntity getT_userEntity(Long user_key) {
+   public T_userEntity getT_userEntity(String user_key) {
         return userDao.getUserInfo(user_key);
    }
+
+
 }
